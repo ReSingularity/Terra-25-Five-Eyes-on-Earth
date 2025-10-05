@@ -46,7 +46,7 @@ const catalog = {
       {
         title: 'FIRMS (Active Fires)', href: 'https://firms.modaps.eosdis.nasa.gov'
       },
-      { title: 'Terra: The EOS Flagship - Aster', href: 'https://terra.nasa.gov/about/terra-instruments/aster' }
+      { title: 'Terra: The EOS Flagship - Modis', href: 'https://terra.nasa.gov/about/terra-instruments/modis' }
     ]
   },
   misr: {
