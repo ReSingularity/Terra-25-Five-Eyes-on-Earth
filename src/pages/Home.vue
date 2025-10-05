@@ -64,6 +64,23 @@
 import Hero from '../components/Hero.vue'
 import TerraMap from '../components/TerraMap.vue'
 import ModuleCard from '../components/ModuleCard.vue'
+
+import { onMounted } from 'vue'
+import { preloadImages } from '../utils/preload'
+
+onMounted(async () => {
+  const base = import.meta.env.BASE_URL
+  const modisFrames = Array.from({ length: 22 }, (_, i) => `${base}data/modis/${String(i)}.jpg`)
+  const misrFrames = Array.from({ length: 7 }, (_, i) => `${base}data/misr/${String(i)}.jpg`)
+  const ceresFrames = Array.from({ length: 15 }, (_, i) => `${base}data/ceres/${String(i)}.jpg`)
+  const asterFrames = Array.from({ length: 3 }, (_, i) => `${base}data/aster/${String(i)}.jpg`)
+  const mopittFrames = Array.from({ length: 5 }, (_, i) => `${base}data/mopitt/${String(i)}.jpg`)
+
+  await Promise.all([
+    preloadImages([...modisFrames, ...misrFrames, ...ceresFrames, ...mopittFrames, ...asterFrames]),
+  ])
+
+})
 </script>
 
 <style scoped>
