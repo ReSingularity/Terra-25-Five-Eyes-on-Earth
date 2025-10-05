@@ -30,7 +30,8 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 const router = useRouter()
-const imgSrc = '/img/terra.png'
+const base = import.meta.env.BASE_URL
+const imgSrc = `${base}img/terra.png`
 const active = ref(null)
 const hotspots = [
   { id: 'modis', label: 'MODIS', x: 46, y: 19 },
