@@ -4,7 +4,8 @@
       <div class="card">
         <span class="badge">INSTRUMENT</span>
         <h2 style="margin:8px 0">{{ meta.title }}</h2>
-        <p style="opacity:.9">{{ meta.desc }}</p><BackHome />
+        <p style="opacity:.9">{{ meta.desc }}</p>
+        <BackHome />
       </div>
     </div>
 
@@ -42,7 +43,10 @@ const catalog = {
     component: MODIS,
     links: [
       { title: 'Worldview (GIBS)', href: 'https://worldview.earthdata.nasa.gov' },
-      { title: 'FIRMS (Active Fires)', href: 'https://firms.modaps.eosdis.nasa.gov' },
+      {
+        title: 'FIRMS (Active Fires)', href: 'https://firms.modaps.eosdis.nasa.gov'
+      },
+      { title: 'Terra: The EOS Flagship - Aster', href: 'https://terra.nasa.gov/about/terra-instruments/aster' }
     ]
   },
   misr: {
@@ -52,6 +56,7 @@ const catalog = {
     links: [
       { title: 'Worldview (GIBS)', href: 'https://worldview.earthdata.nasa.gov' },
       { title: 'MISR Visualizations', href: 'https://misr.jpl.nasa.gov' },
+      { title: 'Terra: The EOS Flagship - MISR', href: 'https://terra.nasa.gov/about/terra-instruments/misr' }
     ]
   },
   ceres: {
@@ -61,6 +66,7 @@ const catalog = {
     links: [
       { title: 'NASA POWER (CERES)', href: 'https://power.larc.nasa.gov' },
       { title: 'Giovanni (CERES)', href: 'https://giovanni.gsfc.nasa.gov' },
+      { title: 'Terra: The EOS Flagship - CERES', href: 'https://terra.nasa.gov/about/terra-instruments/ceres' }
     ]
   },
   aster: {
@@ -70,6 +76,7 @@ const catalog = {
     links: [
       { title: 'Worldview (GIBS)', href: 'https://worldview.earthdata.nasa.gov' },
       { title: 'Earth Observatory', href: 'https://earthobservatory.nasa.gov' },
+      { title: 'Terra: The EOS Flagship - ASTER', href: 'https://terra.nasa.gov/about/terra-instruments/aster' }
     ]
   },
   mopitt: {
@@ -79,6 +86,7 @@ const catalog = {
     links: [
       { title: 'Worldview (GIBS)', href: 'https://worldview.earthdata.nasa.gov' },
       { title: 'Giovanni (MOPITT CO)', href: 'https://giovanni.gsfc.nasa.gov' },
+      { title: 'Terra: The EOS Flagship - MOPITT', href: 'https://terra.nasa.gov/about/terra-instruments/mopitt' }
     ]
   }
 }
