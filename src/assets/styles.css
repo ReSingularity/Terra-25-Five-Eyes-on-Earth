@@ -86,6 +86,7 @@ a:hover {
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(4px);
+  margin-bottom: 24px;
   padding: 18px;
 }
 .badge {

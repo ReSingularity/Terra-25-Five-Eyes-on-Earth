@@ -1,6 +1,6 @@
 <template>
   <section class="section container" id="aster">
-    <p class="card">
+    <div class="card">
     <p>
       ASTER produces high-resolution imagery of Earth’s surface in both visible and infrared bands and generates digital
       elevation models (DEMs).
@@ -11,7 +11,7 @@
     <p>
       It complements the coarser-scale data from MODIS with fine detail.
     </p>
-    </p>
+    </div>
     <AnimMap :frames="frames" :fps="2" />
   </section>
 </template>
