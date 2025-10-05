@@ -1,6 +1,7 @@
 <template>
   <div>
     <canvas ref="canvas" style="position:fixed; inset:0; width:100%; height:100%; z-index: -1;"></canvas>
+    <Preloader />
     <router-view />
     <div class="container section footer">
       Made for NASA Space Apps · Terra 25 · by ReSingularity RenatTOP
@@ -10,6 +11,8 @@
 
 <script setup>
 import { onMounted, ref } from 'vue'
+import Preloader from "./components/Preloader.vue"
+
 const canvas = ref(null)
 onMounted(() => {
   const c = canvas.value, ctx = c.getContext('2d'); const dpr = Math.max(1, window.devicePixelRatio || 1)
