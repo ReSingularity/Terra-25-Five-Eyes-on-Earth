@@ -4,7 +4,7 @@
       <div class="card">
         <span class="badge">INSTRUMENT</span>
         <h2 style="margin:8px 0">{{ meta.title }}</h2>
-        <p style="opacity:.9">{{ meta.desc }}</p>
+        <p style="opacity:.9">{{ meta.desc }}</p><BackHome />
       </div>
     </div>
 
@@ -30,6 +30,7 @@ import MISR from '../components/MISR.vue'
 import CERES from '../components/CERES.vue'
 import ASTER from '../components/ASTER.vue'
 import MOPITT from '../components/MOPITT.vue'
+import BackHome from '../components/BackHome.vue'
 
 const route = useRoute()
 const id = computed(() => (route.params.id || '').toString().toLowerCase())
