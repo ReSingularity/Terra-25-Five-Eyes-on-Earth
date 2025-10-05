@@ -17,7 +17,7 @@ const show = ref(false)
 
 onMounted(() => {
     const base = import.meta.env.BASE_URL
-    const modisFrames = Array.from({ length: 22 }, (_, i) => `${base}data/modis/${String(i)}.jpg`)
+    const modisFrames = Array.from({ length: 19 }, (_, i) => `${base}data/modis/${String(i)}.jpg`)
     const misrFrames = Array.from({ length: 7 }, (_, i) => `${base}data/misr/${String(i)}.jpg`)
     const ceresFrames = Array.from({ length: 15 }, (_, i) => `${base}data/ceres/${String(i)}.jpg`)
     const asterFrames = Array.from({ length: 3 }, (_, i) => `${base}data/aster/${String(i)}.jpg`)
