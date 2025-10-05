@@ -16,5 +16,5 @@
 import AnimMap from './AnimMap.vue'
 
 const base = import.meta.env.BASE_URL
-const frames = Array.from({ length: 15 }, (_, i) => `${base}/data/ceres/${String(i)}.jpg`)
+const frames = Array.from({ length: 15 }, (_, i) => `${base}data/ceres/${String(i)}.jpg`)
 </script>
