@@ -8,7 +8,9 @@
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
-function goHome() { router.push({ path: '/' }) }
+function goHome() {
+    router.back()
+}
 </script>
 
 <style scoped>
